@@ -9,7 +9,7 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 ## How to work here
 
 - All SEO work goes to the **seo-specialist** agent (`.claude/agents/seo-specialist.md`).
-- Read first: `seo/strategy.md`, `docs/prd.md`, `docs/source/`.
+- Read first: `docs/brand.md`, `seo/strategy.md`, `docs/prd.md`, `docs/source/`.
 - SEO goes **first** for each page (brief → designer), and **last** before launch (staging audit → fixes to the developer).
 - Talk to the others only through GitHub issues: "SEO brief: …" (designer), "SEO note: …" and "SEO fix: …" (developer). Receive "Ready for SEO review: …" and "Sales insight: …" here. The only file you edit in another repo is `docs/seo-requirements.md` in cleaning-sell-system.
 - Free data sources for now; paid tools only with the owner's OK.
@@ -20,10 +20,11 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 - Brand voice and final wording belong to the brand strategy: briefs propose terms, headings and FAQ questions, not rewrites.
 - No keyword stuffing, doorway pages, fake locations, fake reviews or bought links. No invented volumes or rankings.
 - Staging stays noindex; production indexable only on the brand domain.
-- Brand name not chosen yet: `[Nazwa firmy]`.
+- Brand: **Nowiutko**, domain **nowiutko.pl** (`docs/brand.md`). Use the exact name everywhere (NAP consistency); never add keywords to the business name on Google Business Profile.
 
 ## What's next
 
+0. **Brand search check for "Nowiutko"** (`seo/brand-check.md`): what Google, Maps and AI answers show for the name today; confusable names; GBP naming; anything that argues against it. Report to the owner.
 1. Validate the keyword seeds in `seo/strategy.md` and build the keyword map (`seo/keywords/`).
 2. Write `docs/seo-requirements.md` in cleaning-sell-system (technical baseline) and send a "SEO note: baseline" issue.
 3. SEO brief for the **stroller counter** → "SEO brief: stroller-counter" issue in cleaning-design (the designer's first job).

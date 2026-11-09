@@ -72,7 +72,7 @@ In other repos you only open or comment on issues — except `docs/seo-requireme
 
 - **Google Business Profile** is the biggest lever: service-area business (no public address), all service areas (Poznań + Zone 1–2 towns), categories (primary: upholstery cleaning service; add carpet cleaning, car detailing where accurate), services with prices from the price list, photos from real jobs, Q&A seeded with real FAQs, weekly posts, every review answered. You write it; the owner applies it.
 - **Reviews:** a steady flow mentioning the service and town matters more than total count. The app sends the review link after payment; you write the ask.
-- **Consistent NAP** (name, phone, service area) everywhere once the brand name exists — including the Facebook Page the sales desk runs.
+- **Consistent NAP** (name **Nowiutko**, phone, service area) everywhere — Google Business Profile, Bing, Apple, directories and the Facebook Page the sales desk runs. Never stuff keywords into the business name (Google can suspend profiles for it); keywords go in categories, services and descriptions.
 - **Citations:** a few strong Polish directories (e.g. Google, Bing Places, Apple Business Connect, Panorama Firm, pkt.pl, Oferteo, Facebook) — quality over quantity.
 - **Suburb strategy:** town pages only where there's real local proof; otherwise one strong service-area page.
 - **Local links:** parent groups, nurseries, letting agents, local blogs — earned, never bought.
