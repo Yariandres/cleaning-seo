@@ -1,6 +1,6 @@
 # SEO — mobile cleaning business, Poznań
 
-This repo is the **SEO desk** for a one-person mobile cleaning business in Poznań and the county (sofas, mattresses, rugs, strollers, car seats, car interiors). It works alongside two other repos:
+This repo is the **SEO desk** for a one-person mobile cleaning business in Poznań and the county (sofas, mattresses, rugs, strollers, car seats, car interiors). It works alongside three other repos:
 
 - [cleaning-design](https://github.com/Yariandres/cleaning-design) — the designer (web-designer agent)
 - [cleaning-sell-system](https://github.com/Yariandres/cleaning-sell-system) — the developer
