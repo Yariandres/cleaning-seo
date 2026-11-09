@@ -4,13 +4,14 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 
 - [cleaning-design](https://github.com/Yariandres/cleaning-design) — the designer (web-designer agent)
 - [cleaning-sell-system](https://github.com/Yariandres/cleaning-sell-system) — the developer
+- [cleaning-sales](https://github.com/Yariandres/cleaning-sales) — the sales desk (sends "Sales insight: …" issues here: real questions, objections, lost reasons, towns with demand)
 
 ## How to work here
 
 - All SEO work goes to the **seo-specialist** agent (`.claude/agents/seo-specialist.md`).
 - Read first: `seo/strategy.md`, `docs/prd.md`, `docs/source/`.
 - SEO goes **first** for each page (brief → designer), and **last** before launch (staging audit → fixes to the developer).
-- Talk to the others only through GitHub issues: "SEO brief: …" (designer), "SEO note: …" and "SEO fix: …" (developer). Receive "Ready for SEO review: …" here. The only file you edit in another repo is `docs/seo-requirements.md` in cleaning-sell-system.
+- Talk to the others only through GitHub issues: "SEO brief: …" (designer), "SEO note: …" and "SEO fix: …" (developer). Receive "Ready for SEO review: …" and "Sales insight: …" here. The only file you edit in another repo is `docs/seo-requirements.md` in cleaning-sell-system.
 - Free data sources for now; paid tools only with the owner's OK.
 
 ## Rules
