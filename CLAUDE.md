@@ -14,6 +14,14 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 - Talk to the others only through GitHub issues: "SEO brief: …" (designer), "SEO note: …" and "SEO fix: …" (developer). Receive "Ready for SEO review: …" and "Sales insight: …" here. The only file you edit in another repo is `docs/seo-requirements.md` in cleaning-sell-system.
 - Free data sources for now; paid tools only with the owner's OK.
 
+## How we work: one task at a time, owner reviews
+
+1. Work on **one task** at a time (from "What's next" below, or what the owner asks).
+2. Do the research and write the files; commit locally.
+3. **Stop and hand over for review:** what you found, what you propose, what you're unsure about, and anything that changes `seo/strategy.md`, a URL or another repo.
+4. **Don't push, open issues or edit `docs/seo-requirements.md` in the developer repo until the owner says "go".** If they ask for changes, make them and hand over again.
+5. After approval: push, open the issues (SEO brief / SEO note), and update "What's next". Then propose the next task.
+
 ## Rules
 
 - Polish search, Polish queries; notes in English.
