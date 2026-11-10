@@ -2,10 +2,11 @@
 
 | | |
 |---|---|
-| URL | `/poznan/pranie-wozkow-i-fotelikow` (recommended; PRD says `/poznan/pranie-wozkow`, owner to confirm) |
-| Status | **Draft, 8 Nov 2026** — awaiting owner OK (it changes the URL and one strategy claim; see `seo/keywords/keyword-map.md` §4). Not yet sent to the designer. |
+| URL | `/poznan/pranie-wozkow-i-fotelikow` (decided by the owner 10 Nov 2026; replaces `/poznan/pranie-wozkow` in the PRD) |
+| Status | Draft 8 Nov 2026 · **approved by owner 10 Nov 2026** · sent to designer: [cleaning-design #2](https://github.com/Yariandres/cleaning-design/issues/2) |
 | Developer issues | — (technical baseline `docs/seo-requirements.md` still to write) |
 | Persona | Kasia, parent (`docs/source/customer-stories-and-copy.md` §1) |
+| Brand | **Nowiutko** (`docs/brand.md`). The title tag options below leave the name out to stay ≤ 60 characters; if the template appends " – Nowiutko", use the shorter option. |
 
 ## 1. Search intent
 

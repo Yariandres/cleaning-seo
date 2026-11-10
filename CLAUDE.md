@@ -32,9 +32,14 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 
 ## What's next
 
-0. **Brand search check for "Nowiutko"** (`seo/brand-check.md`): what Google, Maps and AI answers show for the name today; confusable names; GBP naming; anything that argues against it. Report to the owner.
-1. Validate the keyword seeds in `seo/strategy.md` and build the keyword map (`seo/keywords/`).
-2. Write `docs/seo-requirements.md` in cleaning-sell-system (technical baseline) and send a "SEO note: baseline" issue.
-3. SEO brief for the **stroller counter** → "SEO brief: stroller-counter" issue in cleaning-design (the designer's first job).
-4. Google Business Profile setup plan (`seo/gbp/`) for the owner.
-5. Then briefs for the sofa counter and homepage; audit each page when the developer flags it.
+**Done**
+- ✅ Keyword seeds validated, keyword map built: `seo/keywords/keyword-map.md` (8 Nov; strategy updated 10 Nov).
+- ✅ Stroller counter brief: `seo/briefs/stroller-counter.md`, approved 10 Nov, sent to the designer as "SEO brief: stroller-counter" in cleaning-design (link in the brief's header).
+
+**Next, in order** (one at a time, owner reviews each — see "How we work")
+1. **Brand search check for "Nowiutko"** (`seo/brand-check.md`): what Google, Maps and AI answers show for the name today; confusable names; GBP naming; anything that argues against it. Report to the owner.
+2. **Technical baseline:** write `docs/seo-requirements.md` in cleaning-sell-system and send a "SEO note: baseline" issue. Must include: the stroller URL change to `/poznan/pranie-wozkow-i-fotelikow` (the PRD still says `/poznan/pranie-wozkow`), staging `noindex`, server rendering, sitemap, canonical on nowiutko.pl, structured data (LocalBusiness as a service-area business, Service + Offer with `minPrice`, FAQPage, BreadcrumbList), no AggregateRating without real reviews.
+3. **Google Business Profile plan** (`seo/gbp/`) for the owner — include stroller and car-seat services with prices, because "pranie fotelika samochodowego poznań" is won in the map pack.
+4. **Ask the owner for a Google Keyword Planner export** for the queries in the keyword map (free Google Ads account) — we still have no volumes.
+5. Then briefs for the **sofa counter** and **homepage**; answer the designer's questions on the stroller brief issue; audit each page when the developer flags it.
+6. Later, not v1: one guide "Jak prać fotelik samochodowy" for the DIY brand queries (keyword map §3).

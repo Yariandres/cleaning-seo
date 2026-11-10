@@ -65,13 +65,13 @@
 - Child car seats ("fotelik samochodowy") → stroller counter, never the car counter. The car counter links across.
 - Price questions ("ile kosztuje …") stay on each counter's FAQ. No separate "cennik" page targets them; `/cennik` is navigational.
 
-**URL note:** `docs/prd.md` and `seo/strategy.md` say `/poznan/pranie-wozkow`; `docs/source/digital-home-plan.md` says `/poznan/pranie-wozkow-i-fotelikow`. I recommend the longer one, because the page serves both the stroller queries and the car-seat queries. **Owner to decide before the developer builds the route.**
+**URL note:** decided by the owner 10 Nov 2026: `/poznan/pranie-wozkow-i-fotelikow` (the page serves both stroller and car-seat queries). The PRD still says `/poznan/pranie-wozkow`; the change goes to the developer in the "SEO note: baseline".
 
 ## 3. How-to queries: not for the counter
 
 "jak prać fotelik cybex / maxi cosi / avionaut / britax", "jak prać pasy w foteliku", "pranie fotelika samochodowego w pralce", "jak wyczyścić wózek z pleśni" are strong but DIY. A sales page won't rank for them and shouldn't try. Later (after launch, not v1): one guide, "Jak prać fotelik samochodowy — Cybex, Maxi-Cosi, Avionaut, Britax", written from the manufacturers' manuals, linking to the counter. Owner's call when there's time to write it.
 
-## 4. Proposed changes to `seo/strategy.md` (need the owner's OK)
+## 4. Changes to `seo/strategy.md` — approved by the owner and applied 10 Nov 2026
 
 1. **"Nobody owns strollers" is out of date.** On 8 Nov the Google results page for "pranie wózków dziecięcych poznań" shows Poznań pages, not Warsaw specialists: two drop-off laundry pages from Zawsze Czysto (from 30–35 zł, about 3 days), CleanWhale's Poznań stroller page ("od 99 zł" in the title), Kubus Serwis (stroller repair and cleaning, Facebook), Marek Pluta (page under construction) and OLX. The niche is **contested but weak**: none of them offers same-day cleaning at the customer's door with prices, brand-specific car-seat care and a real FAQ. Suggested wording: "Stroller pages exist but are weak: drop-off laundries, a booking platform and an empty page. Nobody offers same-day cleaning at your door with brand-specific car-seat care."
 2. **Stroller URL** → `/poznan/pranie-wozkow-i-fotelikow` (see note above).

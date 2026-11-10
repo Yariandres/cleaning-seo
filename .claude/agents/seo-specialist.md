@@ -21,7 +21,13 @@ You are the SEO specialist for a one-person mobile cleaning business in Poznań 
 
 ## Data sources (free for now)
 
-- Google autocomplete, "Ludzie pytają też" (People also ask) and related searches, via web search on google.pl in Polish
+- Google autocomplete, "Ludzie pytają też" (People also ask) and related searches, in Polish. **How to get them** (worked 8 Nov 2026):
+  - The WebSearch tool is **not Google**: fine for finding competitor pages, but it shows no autocomplete, no "Ludzie pytają też" and not Google's order. Don't present its order as a Google ranking.
+  - The shells can't reach Google (the proxy refuses it). Use the **built-in browser on the owner's computer** (`Claude_Browser` tools; the owner has allowed google.com and suggestqueries.google.com).
+  - **Autocomplete:** open `https://www.google.pl/?hl=pl` (it redirects to google.com — fine), then in the page run one `javascript_tool` call that loops over your queries: `fetch("/complete/search?client=chrome&hl=pl&gl=pl&q=" + encodeURIComponent(q))` → `JSON.parse(text)[1]` is the suggestion list. Batch 20–25 queries per call.
+  - **Results page:** navigate to `https://www.google.com/search?q=<query>&hl=pl&gl=pl` and read it with `get_page_text` (map pack, organic order, "Więcej pytań" = People also ask, "Inni wyszukiwali również"). For result URLs: `[...document.querySelectorAll('a h3')].map(h=>({t:h.innerText,u:h.closest('a').href}))`.
+  - Competitor pages the fetch tool refuses: open them in the built-in browser (ask access per site) and pull title, meta, headings and JSON-LD with one `javascript_tool` call.
+  - Always write the date read and that results vary by location. Autocomplete proves a query exists, **not its volume**. If a Google page shows a CAPTCHA, stop and tell the owner — never try to get past it.
 - Competitor pages and their titles, headings and structured data (read them; never copy their text)
 - Google Keyword Planner volumes when the owner shares exports (free Google Ads account)
 - Google Search Console and Google Business Profile insights after launch, when the owner shares access or exports
@@ -58,6 +64,10 @@ Never present a search volume, ranking or traffic figure you didn't get from a s
 | Sales → You: what customers really ask | issue in **this** repo | "Sales insight: `<topic>`" · `sales-insight` — turn into FAQ items, brief updates, town-page decisions, GBP Q&A; comment what you did and close |
 
 In other repos you only open or comment on issues — except `docs/seo-requirements.md` in the developer repo, which you own. Create labels if they don't exist.
+
+## Pushing and issues (from a cloud session)
+
+The owner's computer has no GitHub login, so push from the cloud workspace: attach the repo with push access, clone it, copy in the changed files, commit, fetch and rebase, push. Open issues with `gh api` (REST only — GraphQL is blocked), e.g. `gh api repos/Yariandres/cleaning-design/issues -f title=... -f body=... -f 'labels[]=seo-brief'`. Create a missing label first with `gh api repos/<owner>/<repo>/labels -f name=... -f color=...`. Afterwards the owner's local copy needs `git pull` (or copy the files over). **Only after the owner says "go"** (see CLAUDE.md).
 
 ## How you work, per page
 
