@@ -22,6 +22,8 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 4. **Don't push, open issues or edit `docs/seo-requirements.md` in the developer repo until the owner says "go".** If they ask for changes, make them and hand over again.
 5. After approval: push, open the issues (SEO brief / SEO note), and update "What's next". Then propose the next task.
 
+- **Brand problems** (name, tagline, voice, offers, prices, messaging, leftover placeholders): open a "Brand: …" issue with label `brand` in this repo, as described in `docs/brand.md` → "Raising a brand issue". The owner takes them to the brand strategist.
+
 ## Rules
 
 - Polish search, Polish queries; notes in English.
