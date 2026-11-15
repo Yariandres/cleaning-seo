@@ -34,6 +34,8 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 
 ## What's next
 
+**0. PRIORITY — early launch (owner, 15 Nov 2026):** the stroller page goes live on nowiutko.pl by Fri 20 Nov, booking by phone + WhatsApp only. Do [#2](https://github.com/Yariandres/cleaning-seo/issues/2) first: early-launch checklist (SEO note to the developer), homepage v0 mini brief (designer), Google Business Profile plan, production audit right after go-live. Everything below waits until then.
+
 **Done**
 - ✅ Keyword seeds validated, keyword map built: `seo/keywords/keyword-map.md` (8 Nov; strategy updated 10 Nov).
 - ✅ Stroller counter brief: `seo/briefs/stroller-counter.md`, approved 10 Nov, sent to the designer as "SEO brief: stroller-counter" in cleaning-design (link in the brief's header).
