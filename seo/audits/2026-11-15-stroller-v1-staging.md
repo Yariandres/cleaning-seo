@@ -7,7 +7,7 @@
 | Built from | cleaning-design `stroller-v1` (`3ad46b2`); cleaning-sell-system `main` at `dbf33d2` (repo now at `04be221`) |
 | Checked against | `seo/briefs/stroller-counter.md`; `docs/seo-requirements.md` in cleaning-sell-system |
 | Date / method | 15 Nov 2026. Browser on the owner's computer (the cloud can't reach staging). Raw server HTML fetched without JavaScript; JSON-LD parsed; duplicate URLs fetched; phone check at 375×812. |
-| Status | **Draft, for the owner's review.** No "SEO fix" issues filed yet. |
+| Status | Approved by the owner 15 Nov 2026. Fixes filed: cleaning-sell-system [#3](https://github.com/Yariandres/cleaning-sell-system/issues/3), [#4](https://github.com/Yariandres/cleaning-sell-system/issues/4) (P1), [#5](https://github.com/Yariandres/cleaning-sell-system/issues/5), [#6](https://github.com/Yariandres/cleaning-sell-system/issues/6) (P2). Review #1 stays open until the P1s are fixed. |
 
 ## Verdict
 
@@ -92,7 +92,7 @@ From #45 and the developer's known-gaps list:
 - **Core Web Vitals in the lab:** a PageSpeed Insights mobile run, once the page is reachable for it (staging may not be).
 - Rich Results Test on the rendered production page.
 
-## Proposed issues (filed only after the owner says "go")
+## Issues (filed 15 Nov 2026)
 
 | Issue in cleaning-sell-system | Label | Priority |
 |---|---|---|
