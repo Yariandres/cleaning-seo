@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Status | **Draft 16 Nov 2026, for the owner's review.** Not sent. After "go": Part A becomes the body of one issue "SEO note: early launch" (`seo-note`) in cleaning-sell-system; Part B becomes a comment on cleaning-seo #2. |
+| Status | **Approved and sent 16 Nov 2026.** Part A filed as "SEO note: early launch", cleaning-sell-system [#10](https://github.com/Yariandres/cleaning-sell-system/issues/10); Part B posted as a [comment on cleaning-seo #2](https://github.com/Yariandres/cleaning-seo/issues/2#issuecomment-6920691628). |
 | For | Developer, cleaning-sell-system [#8](https://github.com/Yariandres/cleaning-sell-system/issues/8) point 5 (the #45 subset). Owner priority: cleaning-seo [#2](https://github.com/Yariandres/cleaning-seo/issues/2). |
 | Target | Live by Fri 20 Nov 2026 |
 | Read for this | `docs/seo-requirements.md`, `docs/issues.md`, `docs/HANDOFF.md`, `nuxt.config.ts`, `server/data/launch.ts`, `server/middleware/canonical-url.ts` in cleaning-sell-system at `cfaf569`; SEO fixes #3–#6; design handover `stroller-v1.1` §9–10; staging audit `seo/audits/2026-11-15-stroller-v1-staging.md`. **Nothing here was tested on production: it isn't live yet.** |
