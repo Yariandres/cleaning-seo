@@ -9,7 +9,7 @@
 | Not this | The full homepage (PRD S1, "reception desk"). That gets its own brief and its own research later; see §1. |
 | Brand | **Nowiutko** (`docs/brand.md`). All Polish strings below are **proposals**; final wording is the brand strategy's. |
 
-**Owner's decision, 17 Nov 2026: strollers and car seats only (§6, option A).** Homepage v0 names no other service. The strings below are the ones for that decision.
+**Owner's decision, 16 Nov 2026: strollers and car seats only (§6, option A).** Homepage v0 names no other service. The strings below are the ones for that decision.
 
 ## 1. Purpose and target queries
 
@@ -110,7 +110,7 @@ No FAQ, no reviews strip, no before/after, no packages on v0. If the stroller ca
 
 Staging stays `noindex`, as now.
 
-## 6. Unbuilt services: not shown (owner's decision, 17 Nov 2026)
+## 6. Unbuilt services: not shown (owner's decision, 16 Nov 2026)
 
 Sofas, armchairs, mattresses, rugs and car interiors have no pages yet, and the owner is **not** taking those jobs through the site at this launch. So homepage v0 shows **strollers and car seats only**.
 
@@ -180,7 +180,7 @@ Other basics, same as the stroller page: `<html lang="pl-PL">`, one H1, the page
 ## 10. Open questions
 
 **For the owner**
-1. ~~§6: are the other services named?~~ **Decided 17 Nov: strollers and car seats only.** The "sofa before Christmas" item is therefore not on v0.
+1. ~~§6: are the other services named?~~ **Decided 16 Nov: strollers and car seats only.** The "sofa before Christmas" item is therefore not on v0.
 2. Still open from the stroller handover and relevant here too: registered name and NIP for the footer; whether "Cenę podamy dziś" is true in the evening and on Sunday (the homepage reuses the steps).
 
 **For the designer**
