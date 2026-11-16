@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | URL | `/` (`https://nowiutko.pl/`) |
-| Status | **Draft 16 Nov 2026, for owner review.** Not sent. After approval: "SEO brief: homepage-v0" in cleaning-design. |
+| Status | Draft 16 Nov 2026 · **approved by owner 16 Nov 2026** · sent to designer: [cleaning-design #7](https://github.com/Yariandres/cleaning-design/issues/7) |
 | For | Early launch, target Fri 20 Nov 2026. Owner priority cleaning-seo [#2](https://github.com/Yariandres/cleaning-seo/issues/2), task 2 · designer scope cleaning-design [#5](https://github.com/Yariandres/cleaning-design/issues/5), item 2 · developer scope cleaning-sell-system [#8](https://github.com/Yariandres/cleaning-sell-system/issues/8), checklist [#10](https://github.com/Yariandres/cleaning-sell-system/issues/10) |
 | Replaces | The "Wkrótce otwieramy" placeholder now at `/` |
 | Not this | The full homepage (PRD S1, "reception desk"). That gets its own brief and its own research later; see §1. |

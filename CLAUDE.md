@@ -36,7 +36,8 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 
 **0. PRIORITY — early launch (owner, 15 Nov 2026):** the stroller page goes live on nowiutko.pl by Fri 20 Nov, booking by phone + WhatsApp only. Do [#2](https://github.com/Yariandres/cleaning-seo/issues/2) first: early-launch checklist (SEO note to the developer), homepage v0 mini brief (designer), Google Business Profile plan, production audit right after go-live. Everything below waits until then.
    - ✅ Early-launch checklist: `seo/notes/early-launch-checklist.md`, approved 16 Nov, sent as "SEO note: early launch" (cleaning-sell-system #10); designer's four `stroller-v1.1` questions answered on #2.
-   - **Next:** mini brief for homepage v0 → "SEO brief: homepage-v0" (designer). Then the Google Business Profile plan, then the production audit after go-live.
+   - ✅ Homepage v0 mini brief: `seo/briefs/homepage-v0.md`, approved 16 Nov (all services named, inactive ones marked "wkrótce"), sent as "SEO brief: homepage-v0" (cleaning-design #7).
+   - **Next:** Google Business Profile plan (`seo/gbp/`), then the production audit after go-live.
    - Open with the owner: `ai-train` (robots.txt `Content-Signal`); whether to keep `Disallow: /admin` next to the `noindex` header (SEO would drop the disallow).
 
 **Done**
