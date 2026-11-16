@@ -9,7 +9,7 @@
 | Not this | The full homepage (PRD S1, "reception desk"). That gets its own brief and its own research later; see §1. |
 | Brand | **Nowiutko** (`docs/brand.md`). All Polish strings below are **proposals**; final wording is the brand strategy's. |
 
-**One decision is the owner's and changes the title, H1 and one section: §6 (are the other services shown).** Everything else can be designed now. Strings that depend on it are marked **[B]** (other services named, my recommendation) and **[A]** (strollers and car seats only).
+**Owner's decision, 17 Nov 2026: strollers and car seats only (§6, option A).** Homepage v0 names no other service. The strings below are the ones for that decision.
 
 ## 1. Purpose and target queries
 
@@ -38,8 +38,6 @@
 | pranie wózków dziecięcych poznań and the stroller group | Owned by the stroller counter. v0 names the service once and links; it does not repeat the counter's H1, prices table or FAQ. | Stroller counter |
 | pranie kanapy / materaca / tapicerki samochodowej poznań, town queries | Owned by pages that don't exist yet. | Their counters; service-area page |
 
-Under [B] the words "pranie tapicerki" still appear, because they are in the brand's own tagline. That describes the business; it is not an attempt to rank, and no success measure hangs on it.
-
 **How v0 differs from the full homepage, so nothing here boxes it in**
 - Same URL (`/`), so no redirect later. Title, H1, outline and markup are all replaced by the full brief.
 - v0 has **no** menu of outcomes, package tiles, "wanted now" item, proof section, reviews, FAQ or town list. The full homepage has them (PRD S1).
@@ -48,26 +46,23 @@ Under [B] the words "pranie tapicerki" still appear, because they are in the bra
 ## 2. Title tag and meta description (proposals)
 
 **Title** (the home page title is written out in full; the template must **not** append " – Nowiutko" to it):
-- **[B]** `Nowiutko – pranie tapicerki, wózków i aut u Ciebie | Poznań` (59)
-- **[A]** `Nowiutko – pranie wózków i fotelików u Ciebie | Poznań` (54)
+- `Nowiutko – pranie wózków i fotelików u Ciebie | Poznań` (54)
 
-The name goes first: this page answers the brand query, and the title is one of the places Google reads the site name from. [B] is the brand's descriptive tagline plus the city. Google's guidance says the home page title is the right place for a little more than the name ([Title links](https://developers.google.com/search/docs/appearance/title-link)).
+The name goes first: this page answers the brand query, and the title is one of the places Google reads the site name from. Google's guidance says the home page title is the right place for a little more than the name ([Title links](https://developers.google.com/search/docs/appearance/title-link)).
 
 **Meta description** (≤ 155):
-- **[B]** `Nowiutko: pierzemy wózki, foteliki, kanapy, materace i wnętrza aut u Ciebie, w Poznaniu i okolicach. Wyślij zdjęcia na WhatsApp – podamy cenę.` (142)
-- **[A]** `Nowiutko: pierzemy wózki dziecięce i foteliki samochodowe u Ciebie w domu, w Poznaniu i okolicach. Wyślij zdjęcia na WhatsApp – podamy cenę.` (140)
+- `Nowiutko: pierzemy wózki dziecięce i foteliki samochodowe u Ciebie w domu, w Poznaniu i okolicach. Wyślij zdjęcia na WhatsApp – podamy cenę.` (140)
 
-No price in either: v0 has no single "od" price that covers the page.
+No price: the stroller page's title and description carry it; the home page answers the name.
 
 ## 3. H1 and outline (proposals)
 
 **H1** (one, real text, contains the name):
-- **[B]** `Nowiutko – pranie tapicerki, wózków i aut u Ciebie w Poznaniu i okolicach` (the tagline + the area)
-- **[A]** `Nowiutko – pranie u Ciebie w domu, w Poznaniu i okolicach`
+- `Nowiutko – pranie u Ciebie w domu, w Poznaniu i okolicach`
 
 Same pattern as the stroller page (its option a): the H1 may be styled as the small eyebrow, with the brand's voice line *Świeżo i jak nowe — bez wychodzenia z domu.* as the big headline in a `<p>`. Or the H1 is the headline itself. Either is fine for SEO; designer's choice.
 
-Under [A] I kept "wózków i fotelików" **out** of the H1 on purpose: `Nowiutko – pranie wózków i fotelików … w Poznaniu i okolicach` would be nearly the stroller page's H1, and the two pages would compete for the same query. This is one of the reasons I recommend [B].
+"wózków i fotelików" is kept **out** of the H1 on purpose: `Nowiutko – pranie wózków i fotelików … w Poznaniu i okolicach` would be nearly the stroller page's H1, and the two pages would compete for the same query. The title and the services section say what is cleaned; the H1 says who and where.
 
 **Outline** (short page; four sections and the footer)
 
@@ -75,7 +70,7 @@ Under [A] I kept "wózków i fotelików" **out** of the H1 on purpose: `Nowiutko
 |---|---|---|---|
 | 0 | Header | none | Shared pattern: logo, phone (`tel:`), WhatsApp button. No menu: there is nothing to list yet. |
 | 1 | Hero | **H1** + voice line | One or two sentences: what Nowiutko is and that we come to the customer with our own equipment. WhatsApp button, phone number as visible text. |
-| 2 | Services | H2, e.g. `Co pierzemy` | The stroller card with the link (§4). Under [B], the other services as plain text and one sentence on how to ask (§6). |
+| 2 | Services | H2, e.g. `Co pierzemy` | The stroller card with the link (§4). Nothing else is listed (§6). |
 | 3 | How to book | H2, e.g. `Jak to działa` | The three steps, reused from the stroller page in short form: photos on WhatsApp → price → we come to you. |
 | 4 | Area | H2, e.g. `Gdzie dojeżdżamy` | One or two sentences: Poznań and powiat poznański, mobile service. Town names only from `{zones}` data, as on the stroller page, in a sentence or the existing zone component. Not a wall of towns. |
 | 5 | Final CTA | H2, same component as the stroller page | The master promise (PRD S9), WhatsApp button, call button, SMS line. |
@@ -102,7 +97,7 @@ No FAQ, no reviews strip, no before/after, no packages on v0. If the stroller ca
 **Contact (not pages)**
 - WhatsApp: `https://wa.me/48736369704?text=…`, `rel="noopener"`, **no `nofollow`** (as answered on #2).
 - Phone: `tel:+48736369704`, shown as "736 369 704". SMS: `sms:+48736369704` if the final CTA line is reused.
-- The homepage needs **its own prefilled WhatsApp message**. The stroller one says "wózka lub fotelika", which is wrong for someone asking about a sofa. Proposal: `Dzień dobry, proszę o wycenę prania. Wysyłam zdjęcia. Miejscowość: ` (wording for the brand strategist).
+- Prefilled WhatsApp message: **reuse the stroller page's** ("wózka lub fotelika"). With strollers and car seats as the only service, it fits; no separate homepage message is needed until other services are named.
 
 **Must not appear:** links to `/cennik`, `/poznan/obszar-dzialania`, `/poznan/wycena`, any other counter, `/regulamin`, `/cookies`; `href="#"` or empty links; "coming soon" pages; social icons (no profiles exist yet). The Business Profile link is added when the profile exists.
 
@@ -115,26 +110,22 @@ No FAQ, no reviews strip, no before/after, no packages on v0. If the stroller ca
 
 Staging stays `noindex`, as now.
 
-## 6. Unbuilt services: how they show
+## 6. Unbuilt services: not shown (owner's decision, 17 Nov 2026)
 
-Sofas, armchairs, mattresses, rugs and car interiors have no pages yet. Options:
+Sofas, armchairs, mattresses, rugs and car interiors have no pages yet, and the owner is **not** taking those jobs through the site at this launch. So homepage v0 shows **strollers and car seats only**.
 
-| Option | What the visitor sees | SEO effect | Honesty |
-|---|---|---|---|
-| **A. Not shown** | Only strollers and car seats. | Safe, but the homepage becomes a smaller copy of the stroller page: same topic, same area. The two compete, and Google and AI answers learn "Nowiutko = stroller cleaning" for now. The brand tagline ("tapicerki, wózków i aut") then says more than the page does. | Fully honest about what the site sells today. |
-| **B. Named as plain text, with "ask on WhatsApp"** *(recommended, if the owner confirms)* | The stroller card with a link, then one short block: the other services by name, and one sentence saying the price comes from photos on WhatsApp or by phone. | The homepage gets its own subject (the whole business), so it does not compete with the stroller page. Google and AI answers see what Nowiutko does. No URLs are created, so there is nothing thin to index and nothing to redirect later. It does **not** make the page rank for sofa or car queries; those wait for their counters. | Honest **only if** the owner really takes these jobs now. |
-| C. Links to "coming soon" pages, or tiles linking to empty URLs | Tiles that go somewhere empty. | **Rejected.** Empty pages are thin content, waste the first crawl of a new site, and break checklist item 2 (nothing unbuilt is reachable). | Promises pages that don't exist. |
-| D. Greyed-out tiles marked "wkrótce" | Things you can't have. | Harmless to Google, but it tells a brand-new visitor the business isn't ready, when in fact the owner can do the job today. | Misleading in the other direction. |
+- No other service is named: not as a link, not as plain text, not as a greyed-out or "wkrótce" tile, not in the title, description, H1 or share image.
+- No "coming soon" pages and no empty URLs (checklist item 2).
+- When a counter ships, its service is added to the homepage as a link with descriptive anchor text. That is part of the full homepage brief.
 
-**Recommendation: B.** Rules for it:
-- **Plain text, not links.** A simple list, one line per service, no paragraph each (that copy belongs to the future counters), no H3 per service, no styling that looks clickable.
-- Proposed names, from the price list: `Kanapy, narożniki i fotele` · `Materace` · `Dywany` · `Tapicerka samochodowa (wnętrze auta)`. Only the ones the owner confirms.
-- One sentence with the route, e.g. `Kanapę, materac, dywan albo wnętrze auta też pierzemy u Ciebie. Wyślij zdjęcia na WhatsApp – podamy cenę.` (proposal).
-- **No "wkrótce", no "strony w przygotowaniu".** The services are available; only their web pages aren't.
-- No prices for these on v0 unless the owner wants them **and** they come from the production price list (never typed into the page). My suggestion: leave them out; the price is the reason to send photos.
-- When a counter ships, its line becomes a link with descriptive anchor text. Nothing else changes.
+**Known cost, accepted for v0:** the homepage and the stroller page are about the same service and area. To keep them from competing:
+- the homepage H1 leaves out "wózków i fotelików" (§3);
+- the homepage does not repeat the counter's price table, FAQ or long copy; it names the service once and links;
+- the homepage is judged on the brand query only (§1).
 
-**This is the owner's (and sales desk's) decision, not mine:** whether sofa, mattress, rug and car jobs are really accepted by WhatsApp from 20 Nov, and which ones. If the answer is "strollers and car seats only for now", use **A** and the [A] strings; the page is still valid. Note for the decision: the home plan names "the sofa before Christmas" as the seasonal item until 20 December.
+**Brand consequence:** the descriptive tagline "pranie tapicerki, wózków i aut u Ciebie" (`docs/brand.md`) says more than the site sells at launch, so v0 does not use it in the title, H1, description or share image. The designer raised the same point on cleaning-design #6. Whether the tagline appears anywhere on v0 (for example next to the logo) is a brand decision, not an SEO one.
+
+Considered and not chosen: naming the other services as plain text with "ask on WhatsApp" (honest only if those jobs are taken now; they aren't); "coming soon" pages or tiles to empty URLs (thin content); greyed-out tiles.
 
 ## 7. Structured data for `/`
 
@@ -156,7 +147,7 @@ Also: `og:site_name` = `Nowiutko` (checklist item 9) and the logo's `alt="Nowiut
 
 | Tag | Value (proposal) |
 |---|---|
-| `og:title` | **[B]** `Nowiutko – pranie tapicerki, wózków i aut u Ciebie` (50) · **[A]** `Nowiutko – pranie wózków i fotelików u Ciebie` |
+| `og:title` | `Nowiutko – pranie wózków i fotelików u Ciebie` (45) |
 | `og:description` | The meta description |
 | `og:url` | `https://nowiutko.pl/` |
 | `og:type` / `og:site_name` / `og:locale` | `website` / `Nowiutko` / `pl_PL` |
@@ -164,9 +155,9 @@ Also: `og:site_name` = `Nowiutko` (checklist item 9) and the logo's `alt="Nowiut
 | `og:image` | Checklist item 12: one static 1200 × 630 file on nowiutko.pl, absolute HTTPS URL, with `og:image:width`, `og:image:height`, `og:image:alt`. Suggested file name `og-nowiutko-1200x630.png`. |
 
 **Share image:** the designer's existing **no-photo variant**, with the homepage's own text. Proposals for the copy keys:
-- `og.title` (text in the image; the logo supplies the name): **[B]** `Pranie tapicerki, wózków i aut u Ciebie` · **[A]** `Pranie u Ciebie w domu`
+- `og.title` (text in the image; the logo supplies the name): `Pranie u Ciebie w domu`
 - `og.line`: `Poznań i okolice · bez wychodzenia z domu`
-- `og.alt`: **[B]** `Nowiutko: pranie tapicerki, wózków i aut u Ciebie. Poznań i okolice.`
+- `og.alt`: `Nowiutko: pranie wózków i fotelików u Ciebie w domu. Poznań i okolice.`
 
 No price and no phone number inside the image (both can change). One image is enough: the template is already safe in a centre-square crop, so no second square file. **Ship it with the launch if possible**: WhatsApp and Facebook keep the first preview they fetch, and the home page URL is the one that gets shared when someone says "look up Nowiutko".
 
@@ -176,7 +167,7 @@ All of it as real text in the server HTML, readable without JavaScript:
 
 1. **The name:** Nowiutko, in the H1, the title and the logo alt.
 2. **What it is,** in one or two sentences: a mobile cleaning service; we come to your home with our own equipment.
-3. **What can be booked:** strollers and car seats, with the link; under [B] the other services by name.
+3. **What can be booked:** strollers and car seats, with the link. Nothing else.
 4. **Where:** Poznań and powiat poznański (the county), stated in words.
 5. **How to book:** photos on WhatsApp → price → visit. The WhatsApp button and the **phone number visible as text**, not only behind an icon.
 6. **The master promise** (PRD S9): *Przyjeżdżamy na czas. Płacisz tyle, ile podaliśmy ze zdjęć. Jeśli coś wyjdzie po wyschnięciu, wracamy za darmo.*
@@ -189,25 +180,22 @@ Other basics, same as the stroller page: `<html lang="pl-PL">`, one H1, the page
 ## 10. Open questions
 
 **For the owner**
-1. **§6: A or B?** From 20 Nov, do you take sofa, armchair, mattress, rug and car-interior jobs by WhatsApp and phone? Which ones may the homepage name?
-2. If B: prices for those services on v0, or "price from photos" only? (My suggestion: no prices on v0.)
-3. The "sofa before Christmas" item: do you want it on v0 at all? It needs B. I would keep v0 plain and leave the seasonal item to the full homepage.
-4. Still open from the stroller handover and relevant here too: registered name and NIP for the footer; whether "Cenę podamy dziś" is true in the evening and on Sunday (the homepage reuses the steps).
+1. ~~§6: are the other services named?~~ **Decided 17 Nov: strollers and car seats only.** The "sofa before Christmas" item is therefore not on v0.
+2. Still open from the stroller handover and relevant here too: registered name and NIP for the footer; whether "Cenę podamy dziś" is true in the evening and on Sunday (the homepage reuses the steps).
 
 **For the designer**
 1. H1 as the eyebrow with the voice line as the headline, or the H1 as the headline: your call.
 2. The stroller card: please keep the service name inside the `<a>` text (§4). Is the whole card a link, or only its title?
 3. Does v0 reuse the counter header as it is (logo, phone, WhatsApp button)? Fine for SEO; no menu is needed.
 4. The area section: a sentence, or the existing zone component in a compact form? Either, as long as the towns come from data.
-5. Share image text (§8): does [B]'s `og.title` fit three lines at 80 px, or does it need the 64 px size?
+5. Share image text (§8): is `Pranie u Ciebie w domu` enough on its own at 80 px, or do you want the service named in the image as on the stroller one?
 
 **For the brand strategist (through the owner)**
-1. The H1 and title use the descriptive tagline plus "Poznań" / "w Poznaniu i okolicach". Is that wording acceptable?
-2. The tagline says "tapicerki, wózków i aut". Under option A the site sells only strollers and car seats at launch; the designer has already raised this (cleaning-design #6). Under B the tagline is true.
-3. The homepage's prefilled WhatsApp message (§4) and the one-sentence route to the other services (§6).
+1. The proposed H1 (`Nowiutko – pranie u Ciebie w domu, w Poznaniu i okolicach`) and title: is that wording acceptable?
+2. The descriptive tagline says "tapicerki, wózków i aut", but the site sells only strollers and car seats at launch (§6; cleaning-design #6). Does the tagline appear on v0 at all, or wait for the other counters?
 
 **For the developer (goes with the handover; nothing new to build beyond checklist #10)**
-- Home page title without a site-name suffix; `WebSite.name` exactly `Nowiutko`, no `alternateName`, no `SearchAction`; the homepage's own WhatsApp prefill; the stroller link present in the server HTML (checklist item 3's check).
+- Home page title without a site-name suffix; `WebSite.name` exactly `Nowiutko`, no `alternateName`, no `SearchAction`; the stroller link present in the server HTML (checklist item 3's check).
 
 ## Success measure
 
