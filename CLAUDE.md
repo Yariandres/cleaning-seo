@@ -38,10 +38,11 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 **0. PRIORITY — early launch (owner, 15 Nov 2026):** the stroller page goes live on nowiutko.pl by Fri 20 Nov, booking by phone + WhatsApp only. Do [#2](https://github.com/Yariandres/cleaning-seo/issues/2) first: early-launch checklist (SEO note to the developer), homepage v0 page spec (developer), production audit right after go-live. The Google Business Profile plan is parked (below). Everything below waits until then.
    - ✅ Early-launch checklist: `seo/notes/early-launch-checklist.md`, approved 16 Nov, sent as "SEO note: early launch" (cleaning-sell-system #10); designer's four `stroller-v1.1` questions answered on #2.
    - ✅ Homepage v0 brief: `seo/briefs/homepage-v0.md`, approved 16 Nov, sent as "SEO brief: homepage-v0" (cleaning-design #7). **Superseded (17 Nov)** by the page spec below; the designer's `homepage-v0` handoff exists and is the visual reference.
-   - **In review:** homepage page spec `seo/pages/homepage.md` (drafted 17 Nov, committed locally, not sent). After the owner's "go": issue "Page spec: homepage" (label `page-spec`) in cleaning-sell-system. Note for the owner: the 17 Nov brand decision replaced "wkrótce" with "Wycena na WhatsApp"; the spec follows it, with "wkrótce" as a fallback (spec §6, §15 q1).
+   - **In review:** homepage page spec `seo/pages/homepage.md` (drafted 17 Nov, committed locally, not sent). After the owner's "go": issue "Page spec: homepage" (label `page-spec`) in cleaning-sell-system. Owner answers of 17 Nov are in ("Wycena na WhatsApp", hand-taken jobs, hours line, logo PNG task, robots.txt); the spec follows the latest brand rulings (cleaning-design #8).
    - **Parked by the owner (17 Nov):** Google Business Profile plan (`seo/gbp/`). Do not start it until the owner un-parks it.
    - **Next:** production audit after go-live.
-   - Open with the owner: `ai-train` (robots.txt `Content-Signal`); whether to keep `Disallow: /admin` next to the `noindex` header (SEO would drop the disallow).
+   - Decided by the owner 17 Nov: `ai-train=yes` in robots.txt `Content-Signal`; drop `Disallow: /admin`, keep the `noindex` header. Both are in the homepage page spec (§11, §12), which supersedes checklist #10 items 6 and 16 on these points.
+   - Still open with the owner: registered name and NIP for the footer (parked until Fri 20 Nov; company block left out of the launch build).
 
 **Done**
 - ✅ Keyword seeds validated, keyword map built: `seo/keywords/keyword-map.md` (8 Nov; strategy updated 10 Nov).
@@ -50,7 +51,7 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 
 **Waiting on others**
 - Developer: P1 fixes #3 and #4 → then close cleaning-seo #1. Production audit when #45 lands (LocalBusiness, sitemap, og:image, redirects, PageSpeed mobile, Rich Results Test).
-- Owner: confirm the car-seat brands named (only Cybex and Maxi-Cosi checked), the mould answer, the "3–5 godzin" drying time, and the `ai-train` choice for robots.txt `Content-Signal`.
+- Owner: confirm the car-seat brands named (only Cybex and Maxi-Cosi checked), the mould answer, and the "3–5 godzin" drying time.
 
 **Next, in order** (one at a time, owner reviews each — see "How we work")
 1. **Brand search check for "Nowiutko"** (`seo/brand-check.md`): what Google, Maps and AI answers show for the name today; confusable names; GBP naming; anything that argues against it. Report to the owner.

@@ -10,9 +10,10 @@
 | Not this | The full homepage (PRD S1: outcome menu, packages, proof, FAQ, reviews). That gets its own spec later. |
 | Brand | **Nowiutko** (`docs/brand.md`). Name written exactly so; never with a city, keyword or ".pl". |
 
-**Read first (the two decisions that changed since the 16 Nov brief)**
-1. **"wkrótce" is gone.** The brand strategist recorded the owner's decision of 17 Nov on cleaning-design #7: sofas, mattresses, rugs and car interiors are **taken by hand over WhatsApp**, so they are listed as bookable, each row opening WhatsApp with the service in the message, label **"Wycena na WhatsApp"**. The 16 Nov "wkrótce" instruction is superseded. If the owner wants "wkrótce" back, §6 has the alternative strings (one switch, no other change).
-2. **The designer's `homepage-v0` handoff exists and is approved by the owner (17 Nov).** The developer builds from it. The copy below follows its `copy.md` except where §13 lists a deliberate change.
+**Read first (decisions, all confirmed by the owner on 17 Nov 2026)**
+1. **"Wycena na WhatsApp", not "wkrótce".** The owner takes sofa, mattress, rug and car-interior jobs **by hand from day one**, so those services are listed as bookable, each row opening WhatsApp with the service in the message (cleaning-design #7, brand strategist, 17 Nov).
+2. **The designer's `homepage-v0` handoff exists and is approved by the owner (17 Nov).** The developer builds from it. The copy below follows its `copy.md` except where §14 lists a deliberate change.
+3. **Brand corrections of 17 Nov applied** (cleaning-design #8, cleaning-sell-system #12): the homepage chat example's reply reads `Dzień dobry! Dziękujemy — cenę podamy jeszcze dziś.`
 
 ---
 
@@ -82,7 +83,7 @@ Notation: `{…}` is data (§9). Strings in `pl.json` carry a non-breaking space
 - **Story board** (decorative, right column from 900 px; below the text as a slim strip under it on phones): the designer's three beats and chat example. One `role="img"` with
   - `alt`: `Trzy kroki: zaplamiony wózek, zdjęcia wysłane w rozmowie na WhatsApp, wózek jak nowy.`
   - visible labels: `Plama na wózku` · `Przykład: tak wygląda rozmowa` · `Wózek jak nowe`; phone strip (`aria-hidden`): `Plama` · `Zdjęcia` · `Jak nowe`
-  - chat example (hard-coded illustration, not data; no name, time, rating or input): header `Nowiutko / WhatsApp`; customer bubble: two grey image thumbnails + `Dzień dobry, proszę o wycenę wózka.`; reply bubble: `Dziękujemy! Cenę podamy dziś.` + the hours line.
+  - chat example (hard-coded illustration, not data; no name, time, rating or input): header `Nowiutko / WhatsApp`; customer bubble: two grey image thumbnails + `Dzień dobry, proszę o wycenę wózka.`; reply bubble: `Dzień dobry! Dziękujemy — cenę podamy jeszcze dziś.` (brand strategist, cleaning-design #8, 17 Nov; replaces the handoff's "Dziękujemy! Cenę podamy dziś.") + the hours line. The label `Przykład: tak wygląda rozmowa` stays.
   - nothing essential lives only inside the board (every fact is also in the lede, promise, hours and "Jak to działa"). Icons: Lucide plus the two custom SVGs (stroller, chamomile) from `cleaning-design/handoff` (`brand/`, `tokens/`).
 
 ### 4.3 Services: `id="uslugi"` (H2)
@@ -129,18 +130,15 @@ Notation: `{…}` is data (§9). Strings in `pl.json` carry a non-breaking space
 - **New:** the hours line `Odpisujemy pn–pt 9:00–17:00, sob 9:00–14:00` under the buttons (add an optional `hours` prop or default slot to `FinalCta.vue`; the stroller page may adopt it later).
 
 ### 4.7 Footer, sticky bar, cookie banner
-**Reuse unchanged:** `CounterFooter` (in whatever version the stroller page ships at launch; the company block and privacy link follow the stroller page), `CounterStickyBar` (phones, below 900 px), `CookieBanner`. Wrap the page like the stroller page: `<div class="pb-[76px] min-[900px]:pb-0" data-page="home">`, `<main>` around sections 4.2 to 4.6.
+**Reuse unchanged:** `CounterFooter` as the stroller page ships it at launch, **without the company block** (legal name and NIP are parked by the owner until Fri 20 Nov; the block shows only when both values exist and a placeholder never ships, so leave it out of the build for now; see the follow-up in §12), `CounterStickyBar` (phones, below 900 px), `CookieBanner`. Wrap the page like the stroller page: `<div class="pb-[76px] min-[900px]:pb-0" data-page="home">`, `<main>` around sections 4.2 to 4.6.
 
 ## 5. FAQ
 
 **None on this page** (decision). The approved design has no FAQ, the stroller page owns the seven real questions, and a second FAQ here would repeat or contradict them. **Therefore no FAQPage markup on `/`.** The full homepage spec adds the sofa, mattress, price and drying questions once those counters exist.
 
-## 6. If the owner prefers "wkrótce" (alternative, not the default)
+## 6. (removed)
 
-Only if the owner reverses the 17 Nov decision. Change §4.3 and nothing else:
-- Rows become plain, non-clickable list items (no `<a>`, no `href`, not styled like links); the text is `{service name} — wkrótce` with "wkrótce" as real text.
-- Drop the four WhatsApp hrefs and the `services.wa` label.
-- The meta description becomes: `Nowiutko: pierzemy wózki dziecięce i foteliki samochodowe u Ciebie w domu, w Poznaniu i okolicach. Wkrótce także kanapy, materace, dywany i wnętrza aut.` (152) and the lede in §4.2 is cut to `…: wózki i foteliki. Wkrótce także kanapy, materace, dywany i wnętrza aut.`
+The "wkrótce" fallback is dropped: the owner confirmed "Wycena na WhatsApp" on 17 Nov. Section numbers below are unchanged.
 
 ## 7. Internal links (complete list)
 
@@ -170,8 +168,8 @@ Use `useSchemaOrg` as on the stroller page. The **LocalBusiness node must come f
       "url": "https://nowiutko.pl/",
       "telephone": "+48736369704",
       "description": "Mobilne pranie tapicerki, wózków dziecięcych, fotelików samochodowych i wnętrz aut u klienta w domu, w Poznaniu i powiecie poznańskim.",
-      "logo": "https://nowiutko.pl/brand/logo.svg",
-      "image": "https://nowiutko.pl/brand/logo.svg",
+      "logo": "https://nowiutko.pl/brand/logo.png",
+      "image": "https://nowiutko.pl/brand/logo.png",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Poznań",
@@ -212,7 +210,7 @@ Use `useSchemaOrg` as on the stroller page. The **LocalBusiness node must come f
 Rules:
 - `areaServed` above is **illustrative**: generate it with `areaServed(city.name, zones)` (`shared/utils/serviceArea.ts`), exactly as the stroller Service does (Poznań, then every Zone 1 and Zone 2 town in the owner's list). Never type it by hand.
 - `name` of `LocalBusiness` and `WebSite` is exactly `Nowiutko`. **No** `alternateName`, **no** `SearchAction`/`potentialAction`, **no** `priceRange`, `openingHoursSpecification` (the "Odpisujemy …" line is reply time, not opening hours), `sameAs` (no profiles yet), `geo`, `streetAddress`, `postalCode`.
-- Logo: if a PNG of the logo exists, prefer it to the SVG for `logo`/`image` (Google lists SVG as supported; PNG is the safer default). Ask the owner/designer, not blocking.
+- Logo: `logo` and `image` use a **PNG export of `public/brand/logo.svg`** (developer task, §12), e.g. `https://nowiutko.pl/brand/logo.png`, square-friendly and at least 112×112 px, absolute URL. Change the two URLs in the JSON-LD above to it.
 - **None on `/`:** Service, Offer, FAQPage, BreadcrumbList (the home page is the top of the trail), AggregateRating, Review.
 - Validate the **rendered** HTML in the Rich Results Test and the Schema Markup Validator; the page should show no errors. (LocalBusiness is not a rich-result type; the check is for syntax and for `@id` consistency.)
 
@@ -256,7 +254,16 @@ No photos at launch (no stock, no placeholders). Only SVG and one PNG.
 
 ## 11. Indexing, sitemap, robots
 
-`index, follow`; in `sitemap.xml` (`https://nowiutko.pl/`); answers 200; not in `routeRules` exclusions; staging stays `noindex, nofollow` and `Disallow: /` (unchanged). `robots.txt` unchanged (checklist item 6).
+`index, follow`; in `sitemap.xml` (`https://nowiutko.pl/`); answers 200; not in `routeRules` exclusions; staging stays `noindex, nofollow` and `Disallow: /` (unchanged). **Production `robots.txt` (owner decisions 17 Nov; replaces checklist #10 item 6 and item 16):**
+```
+User-agent: *
+Allow: /
+
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://nowiutko.pl/sitemap.xml
+```
+No `Disallow: /admin`. The admin stays out of the index through the `X-Robots-Tag: noindex` header that `routeRules` already sets for `/admin/**` (a crawler can only read a noindex header on a page it is allowed to fetch). Nothing else is disallowed.
 
 ## 12. Developer checklist
 
@@ -273,6 +280,9 @@ No photos at launch (no stock, no placeholders). Only SVG and one PNG.
 - [ ] Skip link `#uslugi`; keyboard order and focus ring per the designer's README §7; works at 320 to 1440 px, no horizontal scroll, no layout shift from the cookie banner; reduced motion honoured
 - [ ] Nothing essential only in JS: `curl` shows every string and the stroller `href`
 - [ ] Add `/` to the JSON-LD e2e test (LocalBusiness `@id` the same on both pages)
+- [ ] Export `public/brand/logo.png` from `logo.svg` (at least 112×112 px; keep the logo's proportions or use the mark on a square canvas) and use it for LocalBusiness `logo` and `image`
+- [ ] `robots.txt` as in §11: `Content-Signal` with `ai-train=yes`, **no** `Disallow: /admin`; confirm `curl -sI https://nowiutko.pl/admin` still shows `x-robots-tag: noindex` (and no cache of the admin)
+- [ ] Footer: no company block at launch. **Post-launch follow-up (after Fri 20 Nov):** when the owner supplies legal name and NIP, enter them in the business data so the shared footer block appears (`footer.md` v1.2); no placeholder before that
 
 ## 13. Acceptance criteria (the SEO desk checks these on staging, then on production)
 
@@ -285,7 +295,7 @@ No photos at launch (no stock, no placeholders). Only SVG and one PNG.
 7. OG: all tags of §2 present; the image URL returns 200, 1200×630; Facebook Sharing Debugger shows image, title and description.
 8. The hours line appears under the hero promise and under the final CTA buttons, with the exact text of §4.2.
 9. `curl` shows no `500 000 000` and does show `48736369704`.
-10. Page is in `sitemap.xml`; `robots.txt` as in checklist item 6.
+10. Page is in `sitemap.xml`; `robots.txt` exactly as in §11 (Content-Signal `ai-train=yes`, no `Disallow: /admin`); `/admin` answers with `x-robots-tag: noindex`; `https://nowiutko.pl/brand/logo.png` returns 200 and is the URL in `logo`/`image`.
 11. Mobile (375 px): the WhatsApp button, the phone number and the H1 are in the first screen; PageSpeed mobile on the live URL: LCP under 2.5 s, CLS under 0.1, INP under 200 ms (filed as a separate "SEO fix" if not).
 12. Search Console, 2 to 4 weeks after go-live: `/` indexed; a search for "Nowiutko" shows the site (site-name display is Google's timing, not a fault); the stroller page lists `/` as a linking page. Judged on being found for the name, not on traffic.
 
@@ -293,43 +303,35 @@ No photos at launch (no stock, no placeholders). Only SVG and one PNG.
 
 | Item | Brief (16 Nov) | Now | Why |
 |---|---|---|---|
-| Unbuilt services | plain text, "wkrótce" | WhatsApp rows, "Wycena na WhatsApp" | Owner's decision 17 Nov (cleaning-design #7, brand strategist) |
-| Meta description | strollers and car seats now, rest "wkrótce" | all services named, "Cena ze zdjęć na WhatsApp" | follows the decision above; matches the designer's `copy.md` |
+| Unbuilt services | plain text, labelled as coming soon | WhatsApp rows, "Wycena na WhatsApp" | Owner's decision 17 Nov (cleaning-design #7, brand strategist) |
+| Meta description | strollers and car seats now, the rest as coming | all services named, "Cena ze zdjęć na WhatsApp" | follows the decision above; matches the designer's `copy.md` |
 | Hero WhatsApp message | reuse the stroller one | generic `home.whatsappMessage` | the page now offers more than strollers (this spec's decision, not in the designer's copy) |
 | Hours line | not in the brief | `Odpisujemy pn–pt 9:00–17:00, sob 9:00–14:00` in hero and final CTA | owner's decision 17 Nov (brand #6 point 3) |
 | Title dash | en dash | em dash U+2014 | `docs/brand.md`; approved by the brand strategist |
-| Share-image copy | "U Ciebie w domu · …" ideas | the designer's final: `Pranie tapicerki, wózków i aut u Ciebie` / `Poznań i okolice · bez wychodzenia z domu` | brand #6 point 7 (no "tego samego dnia" promise) |
-| "tego samego dnia" | n/a | **not used anywhere on `/`** | the brand strategist ruled it a promise we don't make (24 to 48 h slot) |
+| Share-image copy | "U Ciebie w domu · …" ideas | the designer's final: `Pranie tapicerki, wózków i aut u Ciebie` / `Poznań i okolice · bez wychodzenia z domu` | brand #6 point 7 (the line must not read as a same-day visit) |
+| Chat example reply | "Dziękujemy! Cenę podamy dziś." | "Dzień dobry! Dziękujemy — cenę podamy jeszcze dziś." | brand strategist, cleaning-design #8 (17 Nov) |
+| "tego samego dnia" | n/a | **not used on `/`** | the page promises no same-day visit; the stroller page keeps "gotowy tego samego dnia" (ready, not visit) per cleaning-design #8 |
+| robots.txt | `Disallow: /admin`, no Content-Signal yet | no Disallow, `ai-train=yes` | owner, 17 Nov |
 | FAQ, Service, Offer, Breadcrumb | none | none | unchanged |
 
-## 15. Open questions for the owner
+## 15. Open items (everything else is closed)
 
-1. **"wkrótce" or "Wycena na WhatsApp"?** The spec follows the 17 Nov record on cleaning-design #7 (Wycena na WhatsApp). Your last instruction to the SEO desk said "wkrótce". Confirm; §6 is the fallback.
-2. **Can you really take sofa, mattress, rug and car-interior jobs by hand from day one**, and answer those WhatsApp messages within the hours shown? The page now says so (lede, meta description, rows). If not, use §6.
-3. **"Cenę podamy dziś"** with the hours line `pn–pt 9:00–17:00, sob 9:00–14:00`: a message sent on Saturday evening or Sunday gets its price on Monday. Brand decided "stays, read with the hours line". Confirm you are happy with that.
-4. **"Zwykle w kilka minut"** (step 2): confirmed by you on 17 Nov; re-confirm it holds when you are on a job.
-5. **Registered name and NIP for the footer** (the shared footer block shows only when both exist; a placeholder never ships).
-6. **Logo as PNG** (for the `logo` property)? Not blocking; the SVG is used otherwise.
-7. Unchanged and still open from `CLAUDE.md`: `ai-train` value for `Content-Signal`; keep `Disallow: /admin` next to the `noindex` header?
+Decided by the owner on 17 Nov and now written into the spec: "Wycena na WhatsApp" (not "wkrótce"); sofa, mattress, rug and car jobs taken by hand from day one; hours line and "Cenę podamy dziś" (a Saturday-evening message gets its price on Monday); "Zwykle w kilka minut"; logo PNG export; `ai-train=yes`; no `Disallow: /admin`.
 
-## 16. Brand wording to raise (draft, not opened)
+Still open:
+1. **Registered name and NIP** for the footer: parked until Fri 20 Nov; the company block stays out of the launch build (§4.7, §12 follow-up).
+2. **Stroller page wording (not part of this page):** the brand strategist's ruling of 17 Nov (cleaning-design #8, applied by the developer per cleaning-sell-system #12) keeps "tego samego dnia" where it means "ready". The earlier draft Brand issue on this is **withdrawn**: the ruling already exists. Nothing to open. (If the owner's pending decision on this is something other than that ruling, say so and the SEO desk will draft the issue.)
 
-**Issue (repo cleaning-seo, label `brand`): "Brand: stroller page still promises 'tego samego dnia'"**
+## 16. Brand wording
 
-> **Where:** cleaning-sell-system `i18n/locales/pl.json`, `counters.stroller.meta.description` ("Gotowe tego samego dnia"), `counters.stroller.hero.headlineAccent` ("Pod Twoim domem, tego samego dnia."), `counters.stroller.proof[0]` ("Tego samego dnia"), and the FAQ answer seeded in `server/data/poznan.seed.ts` line 384 ("Zwykle tego samego dnia…", also in the FAQPage markup).
-> **What's wrong:** on cleaning-design #6 (16 Nov) the brand strategist decided "tego samego dnia" is a promise Nowiutko does not make (the PRD says a slot within 24 to 48 hours) and changed the share-image line for that reason. The stroller page, which goes live first, still says it in its meta description, headline, proof bar and a FAQ answer. It is also the page's main differentiator against 3-day drop-off laundries (`seo/briefs/stroller-counter.md` §1), so the owner needs to decide, not the SEO desk.
-> **Suggestion:** either the owner confirms same-day is true for strollers and car seats (then the share-image line and the homepage can say so too), or the stroller copy changes to a true claim ("następnego dnia", "często jeszcze tego samego dnia", or "bez trzech dni czekania"). Needs a decision before Fri 20 Nov because it is in the title/description Google will index first.
-
-**Smaller wording points for the brand strategist (no issue needed unless the owner wants one)**
-- The label `Wycena na WhatsApp` on a row for a service that has no price page: fine for SEO; the brand strategist already approved it.
-- The stroller title uses an en dash ("–"), the homepage title the em dash ("—") of `docs/brand.md`. Harmless; align on the next copy pass.
+No "Brand: …" issue needed for this page. The chat-reply wording was corrected by the brand strategist (cleaning-design #8) and is applied in §4.2. Minor, no issue: the stroller title uses an en dash, the homepage title the em dash of `docs/brand.md`; align on the next copy pass.
 
 ## 17. What the "Page spec: homepage" issue will contain (once approved)
 
-- Title **"Page spec: homepage"**, label `page-spec`, repo cleaning-sell-system; body = a link to `seo/pages/homepage.md` (§ numbers above), the three decisions to know first (no "wkrótce", designer's `homepage-v0` handoff is the visual contract, the generic WhatsApp message), the component map (§9), the checklist (§12) and the acceptance criteria (§13), the JSON-LD (§8) pasted in full, and the open owner questions that block nothing.
+- Title **"Page spec: homepage"**, label `page-spec`, repo cleaning-sell-system; body = a link to `seo/pages/homepage.md` (§ numbers above), the decisions to know first ("Wycena na WhatsApp", designer's `homepage-v0` handoff is the visual contract, the generic WhatsApp message, the corrected chat reply, no footer company block yet), the `robots.txt` and logo-PNG tasks, the component map (§9), the checklist (§12) and the acceptance criteria (§13), the JSON-LD (§8) pasted in full, and the one open owner item (company name and NIP, post-launch).
 - Priority: P0 for the 20 Nov early launch (cleaning-sell-system #8 point 4, checklist #10 items 3, 7, 9, 12).
 - After the build: the developer files "Ready for SEO review: homepage" in cleaning-seo; the SEO desk audits staging against §13, then production the day it goes live.
 
 ## Sources (read 17 Nov 2026)
 
-`CLAUDE.md`, `docs/brand.md`, `seo/strategy.md`, `seo/keywords/keyword-map.md`, `seo/briefs/homepage-v0.md`, `seo/briefs/stroller-counter.md`, `seo/notes/early-launch-checklist.md`, `docs/prd.md` (S1, S9), `docs/source/customer-stories-and-copy.md`, `price-list.md`. Read-only, local clones: cleaning-sell-system at `af390c4` (`app/pages/index.vue`, `app/pages/poznan/pranie-wozkow-i-fotelikow.vue`, `app/components/counter/*`, `app/utils/siteLinks.ts`, `i18n/locales/pl.json`, `shared/utils/serviceArea.ts`, `nuxt.config.ts`, `server/data/counters.ts`, `docs/design-constraints.md`); cleaning-design at `938c3a2` (`handoff/pages/homepage-v0/README.md`, `copy.md`, `handoff/components/footer.md`); comments on cleaning-design #6 and #7. Nothing here was tested on a live page.
+`CLAUDE.md`, `docs/brand.md`, `seo/strategy.md`, `seo/keywords/keyword-map.md`, `seo/briefs/homepage-v0.md`, `seo/briefs/stroller-counter.md`, `seo/notes/early-launch-checklist.md`, `docs/prd.md` (S1, S9), `docs/source/customer-stories-and-copy.md`, `price-list.md`. Read-only, local clones: cleaning-sell-system at `af390c4` (`app/pages/index.vue`, `app/pages/poznan/pranie-wozkow-i-fotelikow.vue`, `app/components/counter/*`, `app/utils/siteLinks.ts`, `i18n/locales/pl.json`, `shared/utils/serviceArea.ts`, `nuxt.config.ts`, `server/data/counters.ts`, `docs/design-constraints.md`); comments on cleaning-design #8 and cleaning-sell-system #12 (read again 17 Nov); cleaning-design at `938c3a2` (`handoff/pages/homepage-v0/README.md`, `copy.md`, `handoff/components/footer.md`); comments on cleaning-design #6 and #7. Nothing here was tested on a live page.
