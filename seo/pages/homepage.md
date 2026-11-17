@@ -310,7 +310,7 @@ No `Disallow: /admin`. The admin stays out of the index through the `X-Robots-Ta
 | Title dash | en dash | em dash U+2014 | `docs/brand.md`; approved by the brand strategist |
 | Share-image copy | "U Ciebie w domu · …" ideas | the designer's final: `Pranie tapicerki, wózków i aut u Ciebie` / `Poznań i okolice · bez wychodzenia z domu` | brand #6 point 7 (the line must not read as a same-day visit) |
 | Chat example reply | "Dziękujemy! Cenę podamy dziś." | "Dzień dobry! Dziękujemy — cenę podamy jeszcze dziś." | brand strategist, cleaning-design #8 (17 Nov) |
-| "tego samego dnia" | n/a | **not used on `/`** | the page promises no same-day visit; the stroller page keeps "gotowy tego samego dnia" (ready, not visit) per cleaning-design #8 |
+| "tego samego dnia" | n/a | **not used on `/`** (§16) | page covers more than strollers; rule from cleaning-design #8: only in the "ready" sense, never a visit |
 | robots.txt | `Disallow: /admin`, no Content-Signal yet | no Disallow, `ai-train=yes` | owner, 17 Nov |
 | FAQ, Service, Offer, Breadcrumb | none | none | unchanged |
 
@@ -320,11 +320,16 @@ Decided by the owner on 17 Nov and now written into the spec: "Wycena na WhatsAp
 
 Still open:
 1. **Registered name and NIP** for the footer: parked until Fri 20 Nov; the company block stays out of the launch build (§4.7, §12 follow-up).
-2. **Stroller page wording (not part of this page):** the brand strategist's ruling of 17 Nov (cleaning-design #8, applied by the developer per cleaning-sell-system #12) keeps "tego samego dnia" where it means "ready". The earlier draft Brand issue on this is **withdrawn**: the ruling already exists. Nothing to open. (If the owner's pending decision on this is something other than that ruling, say so and the SEO desk will draft the issue.)
 
-## 16. Brand wording
+Nothing else is open. The "tego samego dnia" question is closed (§16).
 
-No "Brand: …" issue needed for this page. The chat-reply wording was corrected by the brand strategist (cleaning-design #8) and is applied in §4.2. Minor, no issue: the stroller title uses an en dash, the homepage title the em dash of `docs/brand.md`; align on the next copy pass.
+## 16. Wording rule: "tego samego dnia"
+
+Ruling of the brand strategist, 17 Nov (cleaning-design #8, applied by the developer through cleaning-sell-system #12; it reverses the 16 Nov note on #6): the phrase **stays where it means the stroller is ready the same day** (true: washed in the morning, dry in 3 to 5 hours), and goes only where it could read as a same-day visit, which Nowiutko does not promise. On the stroller page that means the hero accent "Gotowy na spacer tego samego dnia.", with the meta description, the seeded FAQ answer and the proof bar kept unless proof[0] reads as a visit. No Brand issue is needed; the draft is withdrawn.
+
+**Homepage decision: do not use "tego samego dnia" on `/` at all.** The page speaks about the whole business, and sofa, mattress, rug and car jobs do not dry in hours (4 to 12 hours per the price list), so the phrase would be true only for the stroller card and invite a misreading as a same-day visit. The stroller page carries it. If the owner wants it on the stroller card, the only allowed form is "gotowy tego samego dnia".
+
+Minor, no issue: the stroller title uses an en dash, the homepage title the em dash of `docs/brand.md`; align on the next copy pass.
 
 ## 17. What the "Page spec: homepage" issue will contain (once approved)
 
