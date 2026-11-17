@@ -8,6 +8,7 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 
 ## How to work here
 
+- **Workflow change (owner, 17 Nov 2026): the designer is paused.** You now **write the page copy as well as the SEO requirements**, and send pages straight to the developer as **"Page spec: <page>"** issues (label `page-spec`) in cleaning-sell-system, linking `seo/pages/<page>.md`. A page spec holds: URL, title, meta description, H1, every section in order with its final Polish copy, FAQ, internal links, structured data, image alts, and which existing component each section reuses (counter template, stroller page, homepage v0, footer). Write in the brand voice (`docs/brand.md`, `docs/source/customer-stories-and-copy.md`): "Ty" voice, freshness, true promises only; doubtful wording → a "Brand: …" issue here. Owner approves each spec before "go". Copy fixes to live pages go the same way. No new "SEO brief" issues to the designer while it's paused.
 - All SEO work goes to the **seo-specialist** agent (`.claude/agents/seo-specialist.md`).
 - Read first: `docs/brand.md`, `seo/strategy.md`, `docs/prd.md`, `docs/source/`.
 - SEO goes **first** for each page (brief → designer), and **last** before launch (staging audit → fixes to the developer).
@@ -27,7 +28,7 @@ This repo is the **SEO desk** for a one-person mobile cleaning business in Pozna
 ## Rules
 
 - Polish search, Polish queries; notes in English.
-- Brand voice and final wording belong to the brand strategy: briefs propose terms, headings and FAQ questions, not rewrites.
+- You write the copy (see the workflow change above); brand rules, the master promise and disputed wording stay with the brand strategist via "Brand: …" issues.
 - No keyword stuffing, doorway pages, fake locations, fake reviews or bought links. No invented volumes or rankings.
 - Staging stays noindex; production indexable only on the brand domain.
 - Brand: **Nowiutko**, domain **nowiutko.pl** (`docs/brand.md`). Use the exact name everywhere (NAP consistency); never add keywords to the business name on Google Business Profile.

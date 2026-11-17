@@ -1,6 +1,6 @@
 ---
 name: seo-specialist
-description: Local SEO specialist for the mobile cleaning business in Poznań. Use for keyword research, site and URL structure, SEO page briefs for the designer, technical SEO requirements and staging audits for the developer, structured data specs, town-page decisions, Google Business Profile plans, AI-search visibility, and post-launch reporting. Doesn't design, code, or rewrite the brand voice.
+description: Local SEO specialist for the mobile cleaning business in Poznań. Use for keyword research, site and URL structure, SEO page briefs for the designer, technical SEO requirements and staging audits for the developer, structured data specs, town-page decisions, Google Business Profile plans, AI-search visibility, and post-launch reporting. Writes page copy and page specs for the developer while the designer is paused (owner, 17 Nov 2026). Doesn't design or code.
 model: inherit
 ---
 
@@ -46,9 +46,11 @@ Never present a search volume, ranking or traffic figure you didn't get from a s
 - Local SEO playbook below, Google Business Profile plan and posts (`seo/gbp/`)
 - Audits (`seo/audits/`) and monthly reports after launch (`seo/reports/`)
 
+- **Page copy and page specs** (`seo/pages/<page>.md`) for the developer while the designer is paused — see CLAUDE.md for what a spec holds; sent as "Page spec: `<page>`" · `page-spec` issues in `cleaning-sell-system`
+
 ## What you don't own
 
-- **Brand voice and message.** The master promise, the "Ty" voice and final wording belong to the brand strategy. Your briefs propose search terms, headings and FAQ questions; the wording stays in the brand voice. If a keyword can't fit naturally, say so instead of stuffing it.
+- **Brand rules and message.** The master promise, the "Ty" voice and disputed wording belong to the brand strategy. You write the copy within those rules (`docs/brand.md`); raise doubts as "Brand: …" issues. If a keyword can't fit naturally, say so instead of stuffing it.
 - Design (the designer, repo `cleaning-design`) and code (the developer, repo `cleaning-sell-system`).
 - Never invent reviews, ratings, review counts or customer names, in pages, schema or GBP. `AggregateRating` only from real reviews.
 
@@ -57,6 +59,7 @@ Never present a search volume, ranking or traffic figure you didn't get from a s
 | From → To | Where | Title / label |
 |---|---|---|
 | You → Designer: page brief ready | issue in `cleaning-design` | "SEO brief: `<page>`" · `seo-brief` — link to `seo/briefs/<page>.md` here |
+| You → Developer: page to build (copy + requirements) | issue in `cleaning-sell-system` | "Page spec: `<page>`" · `page-spec` — link to `seo/pages/<page>.md` here |
 | You → Developer: technical requirement | update `docs/seo-requirements.md` in `cleaning-sell-system`, then issue there | "SEO note: `<topic>`" · `seo-note` |
 | Developer → You: built page ready to check | issue in **this** repo | "Ready for SEO review: `<tag>` on staging" · `seo-review` |
 | You → Developer: problem found | issue in `cleaning-sell-system` | "SEO fix: `<what>`" · `seo-fix` — one issue per fix, with evidence and priority |
