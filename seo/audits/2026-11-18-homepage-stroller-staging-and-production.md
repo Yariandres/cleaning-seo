@@ -16,13 +16,21 @@
 - **Production:** indexable (meta and header). `robots.txt` and sitemap as decided (3 URLs; `Content-Signal` with `ai-train=yes`; no `Disallow: /admin`). `/admin` → `x-robots-tag: noindex, nofollow`. `/cennik`, `/poznan/wycena` → 404. `www` → one 301. Trailing-slash/uppercase → one hop. `/brand/logo.png` 200, 710×200.
 - **Staging:** `noindex, nofollow` in meta and header, `Disallow: /`.
 
+## PageSpeed Insights, mobile, production (18 Nov 2026, ~12:00; Lighthouse 13.6.0, Moto G Power, slow 4G)
+
+| Page | Perf | A11y | Best pr. | SEO | LCP | TBT | CLS |
+|---|---|---|---|---|---|---|---|
+| `/` | 91 | 100 | 100 | 100 | 2.4 s | 220 ms | 0 |
+| `/poznan/pranie-wozkow-i-fotelikow` | 92 | 100 | 92 | 100 | 2.6 s | 120 ms | 0.002 |
+
+LCP < 2.5 s: homepage passes, stroller page is 0.1 s over in the lab (slow-4G emulation); CLS < 0.1 passes. INP is not measured in the lab and there is no field data yet ("No Data"), so INP is unchecked. Top opportunities on both: render-blocking requests (est. 1.4 s), unused JS (~160 KiB) and CSS (~70 KiB), cache lifetimes. Stroller page also: image delivery (63 KiB), and Best Practices 92 (cause not read). No SEO fix filed: all scores are above 90 and the LCP miss is marginal; recheck after real photos replace the generated ones and once CrUX data exists (about 4 weeks).
+
 ## Findings
 
 | # | Pri | Finding | Owner of fix |
 |---|---|---|---|
-| 1 | **P0** | `nowiutko.com` and `www.nowiutko.com` do not resolve (no DNS answer), so checklist item 5 (301 to `nowiutko.pl`) is not met. | Owner (DNS), then developer checks the redirect |
-| 2 | P1 | Generated images are presented as real work: the before/after pair ("Wózki przed i po praniu") and the four problem photos have no "Ilustracja" label, and the alt text describes them as real. Conflicts with "no fake content". Owner decision: label them, or hide before/after until a real pair exists. | Owner decides, then page-spec copy fix to the developer |
-| 3 | P1 | `http://nowiutko.pl/x` redirects once; the status code (301/308 vs 302) was not confirmed. Check with `curl -sI`. | SEO desk (re-check), developer if 302 |
+| 2 | Accepted | Generated images are shown as real work (before/after pair, four problem photos) with no "Ilustracja" label and real-work alt text. Conflicts with "no fake content". **Owner override for launch (18 Nov):** leave as is; the owner replaces them with real photos as jobs come in, same file names (handoff #14). | Owner, as real photos arrive |
+| 3 | Closed | `http://nowiutko.pl/x` → one `308 Permanent Redirect` to HTTPS, path kept. | none |
 | 4 | P2 | `http://www.nowiutko.pl/` takes two hops. Accepted by the checklist. | none |
 | 5 | P2 | Title dash differs: stroller en dash, homepage em dash. Align on the next copy pass. | SEO desk (copy) |
 | 6 | Note | Meta descriptions use "Gotowe tego samego dnia": allowed by the brand ruling of 17 Nov (cleaning-design #8). | none |
@@ -32,5 +40,5 @@
 
 - Owner: Search Console Domain property, submit sitemap, "Request indexing" for `/` and the stroller page.
 - Owner: registered name and NIP for the footer.
-- SEO desk: PageSpeed mobile and Rich Results Test on production; Facebook Sharing Debugger.
-- After finding 1 is fixed: re-check redirects on all four hosts.
+- SEO desk: Rich Results Test on production; Facebook Sharing Debugger. Desktop PageSpeed not run (not required).
+- Owner: replace the generated photos with real ones as jobs come in; the SEO desk re-checks alt text then.

@@ -11,7 +11,6 @@ Decided 9 Nov 2026 by the owner, with the brand strategist (claude.ai). The same
 | Domain | Role | Status |
 |---|---|---|
 | **nowiutko.pl** | Main site and email | Registered 9 Nov 2026 (GoDaddy, owner's account) |
-| nowiutko.com | Protective; redirects to .pl | Registered 9 Nov 2026 |
 
 DNS stays untouched until the developer points it at the Dokploy server. Staging keeps using the temporary subdomain; production goes live only on nowiutko.pl.
 

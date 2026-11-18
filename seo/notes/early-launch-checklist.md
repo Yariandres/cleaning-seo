@@ -53,9 +53,8 @@ Live pages at this launch:
 | Request | Answer |
 |---|---|
 | `https://www.nowiutko.pl/x` | 301 → `https://nowiutko.pl/x` |
-| `https://nowiutko.com/x`, `https://www.nowiutko.com/x` | 301 → `https://nowiutko.pl/x` |
 | `http://nowiutko.pl/x` | 301 or 308 → `https://nowiutko.pl/x` |
-| `http://www.nowiutko.pl/x`, `http://nowiutko.com/x` | ideally one hop to `https://nowiutko.pl/x`. Two hops (HTTPS first, then host) are acceptable if Traefik forces them; never more, and never a 302. |
+| `http://www.nowiutko.pl/x` | ideally one hop to `https://nowiutko.pl/x`. Two hops (HTTPS first, then host) are acceptable if Traefik forces them; never more, and never a 302. |
 
 - Path and query string are kept. Certificates are valid on all four hosts (a certificate error on `www` or `.com` breaks the redirect for visitors).
 - Trailing-slash and upper-case 301s (#5) must not add a hop on top of a host redirect.
