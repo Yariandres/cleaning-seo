@@ -38,8 +38,10 @@ No sub-brands ("Nowiutko Baby", "Nowiutko Auto"), no different fonts or logos pe
 
 - [ ] Handles: @nowiutko on Instagram, Facebook, TikTok
 - [ ] Patent attorney (rzecznik patentowy) clearance, then UPRP trademark filing — class 37 (cleaning services), consider class 3
-- [ ] Logo design (designer, from the chamomile symbol)
+- [x] Logo (designer, from the chamomile symbol): direction B approved 13 Nov 2026. Files: `cleaning-design` handoff; live copies in `cleaning-sell-system/public/brand/` (`logo.svg`, `logo.png`, `mark.svg`, `app-icon.svg`). Use `mark.svg`/`app-icon.svg` for profile pictures.
+- [ ] Decide whether to buy nowiutko.com as a protective domain (not owned, checked 18 Nov 2026)
 - [ ] Business email on nowiutko.pl
+- [x] Website live on nowiutko.pl (17 Nov 2026): homepage, stroller page, privacy page
 - [ ] Google Business Profile, Facebook Page and Telegram bot under the name Nowiutko
 
 ## Raising a brand issue
