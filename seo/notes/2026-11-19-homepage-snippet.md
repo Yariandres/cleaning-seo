@@ -6,7 +6,7 @@ Source: owner's `site:nowiutko.pl` check, 18 Nov. Pages fetched with `curl` on 1
 
 Cause: visible text `Obowiązuje od 20 listopada 2026 r.` under the H1. No `<time>`, no JSON-LD date, no `Last-Modified`. Google took the only date on the page. Filed as **cleaning-sell-system #15** (use the real publish date in `<time datetime>`, never a future one).
 
-## 2. Homepage snippet ends "736 369 704 2–3" — proposal, not filed
+## 2. Homepage snippet ends "736 369 704 2–3" — filed as #16
 
 **What the page has:** the meta description is as in the spec (142 characters, fits). Google is allowed to ignore it and often does, so a rewrite is not an error by itself. It picks text from the page that fits the query.
 
@@ -25,7 +25,7 @@ Buttons and the line carry no punctuation between them, so Google joins them int
 
 **Expected result:** Google will have no phone number or button text to pick, so it falls back to the hero paragraph or the description. It is a hint, not a guarantee, and it takes a recrawl (days to weeks). Recheck with `site:nowiutko.pl` and a search for `nowiutko` on about 3 Dec.
 
-**Owner call:** go to file this as an "SEO fix: homepage snippet" (cleaning-sell-system, `seo-fix`, P2)? Not filed yet.
+**Filed 19 Nov as cleaning-sell-system #16.**
 
 ## 3. Favicon recheck — about 3 Dec 2026
 
